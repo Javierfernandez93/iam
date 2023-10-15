@@ -1,0 +1,101 @@
+.section-4,
+.section-5,
+.section-6,
+.section-7 {
+  position: relative;
+}
+.section-4 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-image: url(../../src/img/s-4-1.png);
+}
+.section-8 {
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../../src/img/s-8-1.png);
+}
+.section-9 {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  background-image: url(../../src/img/s-9-1.png);
+}
+.section-11 {
+  height: 600px;
+}
+.bg-section-11 {
+  height: 600px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  background-image: url(../../src/img/s-11-1.png);
+}
+.bg-section-13 {
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: cover;
+  background-image: url(../../src/img/s-13-2.png);
+}
+.section-14 {
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  background-image: url(../../src/img/s-14-1.png);
+}
+.box-vertical-center {
+  display: flex;
+  align-items: center; 
+}
+.floating-right {
+  background: #00969C;
+  border-radius: 0 0 12px 12px;
+  top: 0;
+  right: 52px;
+  position: absolute;
+  color: #fff;
+  font-size: 25px;
+  padding: 4px 15px;
+}
+#overlay-steps-container {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  background-image: url(../../src/img/fondo-promocional.png);
+}
+.overlay-steps {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 10000001;
+  top: 0;
+  left: 0;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-warning {
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-dismissible {
+    padding-right: 35px;
+}
+.box-vertical-center {
+  display: inline-flex;
+  align-items: center; 
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  transform: translateY(70%);
+}

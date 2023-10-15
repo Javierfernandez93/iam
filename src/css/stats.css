@@ -1,0 +1,12 @@
+body {
+  background-color: #1f1f27;
+}
+.border-gray {
+  border-color: #343442 !important;
+}
+.border-orange .text-muted {
+	color: #fff !important;
+}
+.border-orange {
+  border-color: #ca6e0b !important;
+}

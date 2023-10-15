@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Century Gothic';
+    src: url('fonts/4365_0.ttf');
+}
+@font-face {
+    font-family: 'Century Gothic Bold';
+    src: url('fonts/07723_CGOTHICB0.ttf');
+}
+.item-rounded-container {
+    display: inline-block;
+    width: 10%;
+}
+.item-rounded-box {
+    display: inline-block;
+    width: 90%;
+}
+html,body
+{
+  background: #333;  
+  margin:0;
+  padding:0;
+  color:#000;
+  height:100%;
+  font-size: 12px;
+  font-family: 'Century Gothic',Arial,Helvetica;
+  background:#fff;
+}
+.box-separator:before{
+  content: '';
+  position: absolute;
+  left: 48%;
+  bottom: -20px;
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #003040;
+}
+.box-separator
+{
+  padding: 24px 0 28px 0;
+  position: relative;
+  background: #003040;
+  color: #b5e3e1;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+
+.navbar-nav h5 {
+  color: #fff;
+}
+
+.box-navbar ul {
+  list-style: none;
+}
+.box-navbar li {
+  float: left;
+  padding: 18px 22px;
+  margin: 0 52px;
+} 
+.box-navbar {
+  width: 100%;
+  height: 60px;
+  z-index: 10;
+  background: rgba(9, 134, 164, 0.69) !important;
+  position: fixed;
+}
+
+.bg-inverse {
+  background: rgba(9, 134, 164, 0.69) !important;  
+}
+.box-floating-rounded
+{
+    background: rgba(20, 122, 132, 0.7);
+    margin-top: 78px;
+    margin-left: 78px;
+    color: #fff;
+    font-size: 52px;
+    border-radius: 21rem;
+    width: 400px;
+    height: 400px;
+    line-height: 5rem;
+    text-align: center;
+    padding: 79px 0 22px 0;
+}
+
+
+.section-1,
+.section-2,
+.section-3,
+.section-4,
+.section-5,
+.section-6,
+.section-7,
+.section-8
+{
+  width: 100%;
+}
+
+footer
+{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 159px;
+  background-color: #003040;
+}
+footer ul li:not(:last-of-type):after
+{
+  content: '|';
+  margin-left: 9px;
+  position: absolute;
+  font-size: 13px;
+  color: #fff;
+  margin-top: 2px;
+  font-weight: 100;
+}
+footer ul li a
+{
+  font-style: normal;
+  color: #fff;
+  font-size: 13px;
+}
+footer ul li
+{
+  float: left;
+  padding: 8px 15px;
+  font-weight: 100;
+}
+footer ul
+{
+  margin-top: 22px !important;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  list-style: none;
+}
+
+.box-copyright {
+  font-size: 17px;
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  left: 0px;
+  padding: 8px 0;
+  font-weight: 100;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+.box-list {
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  padding: 12px 0;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.button-for-teproveeo {
+  background: #de5053;
+  padding: 18px 12px 26px 12px;
+  font-size: 22px;
+  font-weight: 100;
+  color: #fff;
+}
+
+.box-brand {
+  display: none;
+}

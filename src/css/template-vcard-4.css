@@ -1,0 +1,55 @@
+:root {
+    --bs-bg-body: #eff3f7;
+    --bs-bg-primary: #e2cbff;
+    --bs-bg-secondary: #464b5f;
+    --bs-bg-warning: #eb4f28;
+    --bs-bg-danger: #e7311d;
+    --bs-bg-success: #29e439;
+    --bs-bg-dark: #232535;
+    --bs-bg-light: #eff3f7;
+}
+body {
+    background-color: var(--bs-bg-body) !important;   
+}
+.bg-primary {
+    background-color: var(--bs-bg-primary) !important;
+}
+.bg-secondary {
+    background-color: var(--bs-bg-secondary) !important;
+}
+.bg-warning {
+    background-color: var(--bs-bg-warning) !important;
+}
+.bg-danger {
+    background-color: var(--bs-bg-danger) !important;
+}
+.bg-success {
+    background-color: var(--bs-bg-success) !important;
+}
+.bg-dark {
+    background-color: var(--bs-bg-dark) !important;
+}
+.bg-light {
+    background-color: var(--bs-bg-light) !important;
+}
+/* cards */
+#card-social,
+#card-qr,
+#card-share {
+    border: none;
+    background-color: var(--bs-bg-secondary) !important;   
+}
+#card-share a {
+    color: var(--bs-bg-primary) !important;
+}
+.btn-social {
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    background-color: var(--bs-bg-dark);
+}
+.text-socials {
+    color: var(--bs-bg-light) !important;
+}
+.text-light {
+    color: var(--bs-bg-primary) !important;
+}

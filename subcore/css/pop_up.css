@@ -1,0 +1,32 @@
+#pop_up { cursor: pointer; }
+.pop_up
+{
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    min-width: 50%;
+    min-height: 20%;
+    padding: 26px 16px;
+    /* background-color: #26ADB2;*/ /*green*/
+    /* background-color: #37A7DF;*/ /*blue*/
+     background-color: #FFFFFF; 
+    z-index:5001;
+    -webkit-box-shadow: 5px 5px 10px 0 #888;
+    box-shadow: 5px 5px 10px 0 #888;
+    border-radius: 4px;
+    text-align: center;
+}
+.pop_up span
+{
+	background: #D52525;
+	left: 97.4%;
+	top: -10px;
+	color: #FFF;
+	border-radius: 18px;
+	display: inline-block;
+	position: absolute;
+	height: 27px;
+	cursor: pointer;
+	padding: 0px 10px;
+}
+.pop_up span:hover{background: #F83232;}

@@ -1,0 +1,40 @@
+.bg-section-2 {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0 1px;
+  background-size: cover;
+  background-image: url(../../src/img/l-2-1.png);
+}
+.bg-section-3 {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0 1px;
+  background-size: cover;
+  background-image: url(../../src/img/l-3-1.png);
+}
+.bg-section-4 {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0 1px;
+  background-size: cover;
+  background-image: url(../../src/img/l-4-1.png);
+}
+.bg-section-5 {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: -1px 0px;
+  background-size: cover;
+  background-image: url(../../src/img/l-5-1.png);
+}
+.bg-section-6 {
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-position: 0 1px;
+  background-size: cover;
+  background-image: url(../../src/img/l-6-1.png);
+}

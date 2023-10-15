@@ -1,0 +1,198 @@
+
+[
+    {
+        "__common":
+        {
+            "Hi": "Hola",
+            "Menu": "Menú",
+            "Welcome": "Bienvenido",
+            "Admin": "Administrador",
+            "Home admin": "Administrador principal",
+            "Enter your data": "Ingresa tus datos",
+            "Enter your login data": "Ingresa tus datos de acceso",
+            "Enter your login data": "Ingresa tus datos de acceso",
+            "Mail":"Correo",
+            "Loading":"Cargando",
+            "Loading...":"Cargando...",
+            "male":"hombre",
+            "female":"mujer"
+        },
+
+        "__admin":
+        {
+            "sended" : "enviada"
+        },
+
+        "__common_link":
+        {
+            "Home": "Inicio",
+            "Language": "Idioma",
+            "Signup": "Registro",
+            "Signup us": "Registrate",
+            "Login": "Iniciar sesión",
+            "Logout": "Cerrar sesión",
+            "Contact us": "Contáctanos",
+            "About us": "Sobre nosotros",
+            "Back to home": "Volver al inicio",
+            "Terms of service": "Términos de servicio",
+            "Privacy policy": "Políticas de privacidad",
+            "Forgot your password?": "¿Olvidaste tu contraseña?",
+            "The sponsor id does not exist. Please try again" : "El Número de socio es incorrecto ó no existe. Por favor intente de nuevo",
+            "The sponsor id must be a number. Please try again" : "El ID de socio deben de ser un número. Por favor intente de nuevo"
+        },
+
+        "__common_button":
+        {
+            "Send": "Enviar",
+            "Save": "Guardar",
+            "Cancel": "Cancelar",
+            "Edit": "Editar",
+            "Delete": "Eliminar",
+            "Active": "Activo",
+            "Inactive": "Inactivo",
+            "Actions": "Acciones"
+        },
+
+        "__common_label_and_input":
+        {
+            "Name": "Nombre",
+            "name": "nombre",
+            "Password": "Contraseña",
+            "password": "contraseña",
+            "E-mail": "Correo electrónico",
+            "e-mail": "correo electrónico",
+            "Watch shopping club video" : "Ver video club de compras",
+            "Watch start video" : "Ver el video principal"
+        },
+
+        "__page_recovery_password":
+        {
+            "Recovery": "Recuperar",
+            "Recovery your password": "Recupera tu contraseña"
+
+        },
+
+        "__page_info":
+        {
+            "Support:": "Soporte:",
+            "Fast and touch": "Rápido al contacto",
+            "Time saver": "Ahorro de tiempo",
+            "Better tracking system": "Mejor sistema de seguimiento",
+            "Protect your data by password": "La información protegida bajo una contraseña",
+            "The possibility of simply managing info": "La posibilidad gestionar información de una forma muy sencilla"
+        },
+
+        "__invitations":
+        {
+            "This e-mail invitation and belongs to a registered" : "Este correo electrónico ya esta registrado",
+            "Imposible send. Please try login again" : "No se pudo enviar. Por favor intente de nuevo",
+            "Not save invitation. Please try login again" : "No se guardo la invitación. Por favor intente de nuevoThis e-mail invitation and belongs to a registered",
+            "This e-mail belongs to a user already registered" : "Este usuario ya esta registrado",
+            "pending" : "pendiente"
+        },
+        "__pop_up_alerts":
+        {
+            "The password has been save correctly" : "La contraseña ha sido guardada correctamente",
+            "Congratulations you have generated an invitation!" : "Felicidades se ha generado una invitación",
+            "Congratulations on accepting the invitation!" : "Felicidades has aceptado tu invitación",
+            "The e-mail is incorrect. Please try again" : "El e-mail es incorrecto. Porfavor intente de nuevo",
+            "The password is incorrect. Please try again" : "La contraseña es incorrecta. Porfavor intente de nuevo",
+            "The street is incorrect or duplicate. Please try again" : "La calle es incorrecta o esta duplicada. Porfavor intente de nuevo",
+            "The information provided already exists. Please try again" : "La información proporcionada ya existe. Por favor intente de nuevo",
+            "The lada data is incorrect. Please try again" : "La lada es incorrecta. Porfavor intente de nuevo",
+            "The bank is incorrect" : "El banco es incorrecto. Porfavor intente de nuevo",
+            "The cellular are incorrect. Please try again" : "El celular es incorrecto. Porfavor intente de nuevo",
+            "The cellular are incorrect. Please try again" : "El celular es incorrecto. Porfavor intente de nuevo",
+            "The state is incorrect. Please try again" : "El estado es incorrecto. Porfavor intente de nuevo",
+            "The city is incorrect. Please try again" : "La cuidad es incorrecta. Porfavor intente de nuevo",
+            "The city is incorrect. Please try again" : "La cuidad es incorrecta. Porfavor intente de nuevo",
+            "The zip code is incorrect. Please try again" : "El código postal es incorrecto. Porfavor intente de nuevo",
+            "The street is incorrect. Please try again" : "La calle es incorrecta. Porfavor intente de nuevo",
+            "The colony is incorrect. Please try again" : "La colonia es incorrecta. Porfavor intente de nuevo",
+            "The confirm password is incorrect. Please try again" : "La confirmación de contraseña es incorrecta. Porfavor intente de nuevo",
+            "The new password is incorrect. Please try again" : "La nueva contraseña es incorrecta. Porfavor intente de nuevo",
+            "The country is incorrect. Please try again" : "El país es incorrecto. Porfavor intente de nuevo",
+            "The birthday is incorrect. Please try again" : "La fecha de cumpleaños es incorrecta. Porfavor intente de nuevo",
+            "Please check the terms of the contract to continue" : "Seleccione términos de contrato para continuar",
+            "Please check the affiliate agreement to continue" : "Seleccione el acuerdo de afiliado para continuar",
+            "Please check the terms of service to continue" : "Acepte los términos de uso para continuar",
+            "Your data has been saved correctly" : "Su información ha sido guardada con exito",
+            "The language is incorrect. Please try again" : "El lenguaje es incorrecto. Porfavor intente de nuevo",
+            "The account is incorrect" : "La cuenta es incorrecta. Porfavor intente de nuevo",
+            "Saving new password..." : "Guardando nueva contraseña...",
+            "The CLABE is incorrect" : "La CLABE es incorrecta. Porfavor intente de nuevo",
+            "The CLABE must be 18 digits" : "La CLABE debe ser de 18 digitos. Porfavor intente de nuevo",
+            "The passwords not match. Please try again" : "Las contraseñas no coinciden. Porfavor intente de nuevo",
+            "The name is incorrect. Please try again" : "El nombre es incorrecto. Porfavor intente de nuevo",
+            "The nick name is incorrect. Please try again" : "El nick name es incorrecto. Porfavor intente de nuevo",
+            "The last name is incorrect. Please try again" : "El apellido es incorrecto. Porfavor intente de nuevo",
+            "The cellular data is incorrect. Please try again" : "La información del cellular es incorrecta. Porfavor intente de nuevo",
+            "The user does not exist" : "El usuario no existe",
+            "Enter the password. Please try again" : "Introduzca la contraseña. Porfavor intente de nuevo",
+            "Sorry. This user is inactive. Please contact your sponsor" : "Lo sentimos. El usuario esta inactivo. Porfavor contacte a su soporte técnico",
+            "Mail does not exist" : "El correo electrónico no existe",
+            "Sorry something is wrong with your data. Please try again or contact your sponsor" : "Lo sentimos algo esta mal con su información. Porfavor intente de nuevo o contacte a su patrocinador",
+            "Enter your id. Please try again" : "Introduzca su id. Porfavor intente de nuevo",
+            "The e-mail is incorrect. Please try again" : "El correo electrónico es incorrecto. Porfavor intente de nuevo",
+            "Congratulations on accepting the invitation!" : "¡Felicidades por aceptar la invitación!",
+            "Congratulations you have generated an invitation!" : "¡Felicidades has generado una invitación!",
+            "Congratulations! Your username has been created" : "¡Felicidades! Su usuario ha sido creado",
+            "Error. Please try again" : "Error. Porfavor intente de nuevo",
+            "Mail already exist. Please try again" : "El correo electrónico ya existe. Porfavor intente de nuevo",
+            "or Login" : "Iniciar sesión",
+            "Please try again" : "Porfavor intente de nuevo",
+            "Are you sure to do this action?" : "¿Estas seguro de hacer esta acción?",
+            "Data has been saved successfull" : "La información se guardo con exito",
+            "To edit your mail first must change" : "Para editar su correo electrónico primero debe cambiarlo",
+            "Yes" : "Sí",
+            "The current password is incorrect. Please try again" : "La contraseña actual es incorrecta. Porfavor intente de nuevo",
+            "Select the cancel account first" : "Primero seleccione cancelar cuenta",
+            "Data has been saved" : "Se ha guardado la información",
+            "Sending invitation..." : "Enviando invitación",
+            "Your account has been canceled. You will be redirected" : "Tu cuenta ha sido cancelada. Serás redireccionado",
+            "An e-mail is coming to your mail to recover your password" : "Se envio un correo electrónico a su cuenta para recuperar su contraseña",
+            "Send invitation correctly" : "Se envio la invitación correctamente",
+            "Mail does not exists" : "El correo electrónico no existe"
+        },
+
+        "mail_title":
+        {
+            "Change password" : "Cambio su contraseña"
+        },
+
+        "__ewallet":
+        {
+            "Loading payoneer details" : "Cargando detalles de cuenta payoneer"
+        },
+
+        "__login_user":
+        {
+             "The mail is incorrect. Please try again" : "El correo electrónico es incorrecto. Por favor intente de nuevo",
+             "The member id is incorrect. Please try again" : "El número de miembro es incorrecto. Por favor intente de nuevo"
+        },
+        "__network":
+        {
+            "Sorry you don't have network yet" : "Lo sentimos usted aun no tiene una red",
+            "You don't have levels in your network yet" : "Usted aun no tiene una red",
+            "Countries of your organization" : "Países de tu organización",
+            "View my organization" : "Ver mi organización",
+            "View my active organization" : "Mi organización activa",
+            "Surplus network" : "Red de Excedentes",
+            "Total users in level" : "Total de usuarios en el nivel",
+            "Level" : "Nivel",
+            "Summary level" : "Resumen del nivel",
+            "Total people" : "Total de personas",
+            "Total commission" : "Total de comisión",
+            "Sponsor id":"Id patrocinador",
+            "Sponsor":"Patrocinador",
+            "Status":"Estado",
+            "Buy":"Compra",
+            "Title":"Titulo",
+            "Reports" : "Reportes",
+            "Comission":"Comisión",
+            "Cashout": "Corte",
+            "Action": "Accion",
+            "Download": "Descargar"
+        }
+    }
+]

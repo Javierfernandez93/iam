@@ -1,0 +1,24 @@
+.list-group-item {
+  opacity: 0.5;
+}
+.list-group-item:hover,
+.list-group-item,
+.list-group-item .avatar-title i,
+.list-group-item:hover .avatar-title i,
+.list-group-item .avatar-title,
+.list-group-item:hover .avatar-title
+{
+  transition: all ease 200ms;
+}
+.list-group-item:hover .avatar-title i {
+  color: #fff;
+}
+.list-group-item:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.list-group-item:hover .avatar-title {
+  zoom: 1.5;
+  transform: translateX(3px) rotate(10deg) translateY(3px);
+  background-color: #00d97d !important;
+}

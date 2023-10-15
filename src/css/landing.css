@@ -1,0 +1,36 @@
+.bg-gradient-warning { background-image: linear-gradient(310deg, #f53939 0%, #fbcf33 100%); } @font-face { font-family: 'PoppinsRegular'; src: url('../../src/fonts/Poppins/Poppins-Regular.ttf'); } @font-face { font-family: 'PoppinsBold'; src: url('../../src/fonts/Poppins/Poppins-Bold.ttf'); } @font-face { font-family: 'PoppinsBlack'; src: url('../../src/fonts/Poppins/Poppins-Black.ttf'); } @font-face { font-family: 'PoppinsLight'; src: url('../../src/fonts/Poppins/Poppins-Light.ttf'); } @font-face { font-family: 'PoppinsSemiBold'; src: url('../../src/fonts/Poppins/Poppins-SemiBold.ttf'); } body { font-family: 'PoppinsRegular'; overflow-x: hidden; } .fw-semibold { font-family: 'PoppinsSemiBold'; } 
+.section-1 {
+    min-height: 300px;
+}
+
+.square {
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    z-index: -1;
+    
+    top: -20rem;
+    border-radius: 5rem;
+    transform: rotate(45deg);
+}
+.square-right {
+    right: -17rem;
+}
+.square-left {
+    left: -17rem;
+}
+
+.font-responsive {
+    text-align: right;
+    color: white;
+}
+
+@media (max-width: 600px) {
+  .font-responsive {
+    color: #222 !important;
+    text-align: center;
+  }
+}
+.cursor-pointer {
+    cursor: pointer;
+}

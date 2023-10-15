@@ -1,0 +1,19 @@
+:root {
+    --bg-primary: #0a58ff;
+    --bg-warning: #ffde0a;
+}
+body {
+    background-color: var(--bg-primary);
+}
+
+.btn-warning {
+    background-color: var(--bg-warning);
+}
+h3 {
+    font-size: 2rem !important;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+h1 {
+    font-size: 3rem;
+}

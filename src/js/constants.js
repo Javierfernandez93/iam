@@ -1,0 +1,1 @@
+const MAIN_PATH = 'https://www.iam.com.mx/'

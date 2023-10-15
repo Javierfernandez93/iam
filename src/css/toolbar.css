@@ -1,0 +1,71 @@
+body {
+  height: 100vh;
+}
+.stores-container {
+  background-image: url(../../src/img/stores/food-bg.png);
+  box-shadow: inset 0 -1.3em 1.3rem rgba(0,0,0,0.1);
+}
+.form-select,
+.form-control,
+.btn {
+  border-radius: 0;
+}
+.form-select {
+  background-color: #e8ecef;
+}
+.input-group-text,
+.form-select,
+.form-control {
+  background-color: #e8ecef;
+  border-color: #e8ecef;
+}
+.lead-xxl {
+  font-size: 3rem;
+}
+
+.form-control,
+.form-control:focus
+{
+  transition: all ease 500ms;
+}
+.form-control:focus .input-group-append {
+  background-color: #222;
+}
+.form-control:focus {
+  background: #e8ecef;
+  outline: none;
+  box-shadow: none !important;
+  border-color: #e8ecef;
+  border-bottom-color: #222;
+}
+
+.btn-primary
+{
+  background-color: #3826BF !important;
+  border-color: #3826BF !important;
+}
+.nav-float {
+  position: fixed;
+  width: 100%;
+}
+.toolbar {
+  position: fixed !important;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  transition: all ease 500ms;
+}
+.hide-toolbar
+{
+  transition: all ease 400ms;
+  transform: translateX(-500px);
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all ease 1500ms;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}

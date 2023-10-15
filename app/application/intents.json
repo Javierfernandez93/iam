@@ -1,0 +1,59 @@
+[
+    {
+        "tag": "greeting",
+        "description": "Usado para dar la bienvenida a tus usuarios",
+        "words": [
+            {
+                "value": "Hola/que tal/que hay buena/buenas tarde/tardes"
+            },
+            {
+                "value": "Hola/que tal/que hay buen/buenos dia/dias"
+            },
+            {
+                "value": "Hola/que tal/que hay buena/buenas noche/noches"
+            }
+        ],
+        "replys": [
+            {
+                "value": "¡Hola *{{name}}*! somos *{{server_name}}* ¿cómo podemos ayudarte?"
+            }
+        ]
+    },
+    {
+        "tag": "products",
+        "description": "Muestra lista de productos",
+        "words": [
+            {
+                "value": "¡Hola, buenas tardes!"
+            }
+        ],
+        "replys": [
+            {
+                "value": "¡Hola!"
+            }
+        ]
+    },
+    {
+        "tag": "thanks",
+        "description": "Responde a agradecimiento del usuario",
+        "words": [
+            {
+                "value": "Muchas gracias"
+            },
+            {
+                "value": "lo/le agradezco/agradezco mucha"
+            },
+            {
+                "value": "Me ha sido de ayuda/mucha ayuda"
+            },
+            {
+                "value": "Me ha sido de utilidad/mucha utilidad"
+            }
+        ],
+        "replys": [
+            {
+                "value": "Gracias a tí, *{{name}}*. Esperamos que nos vuelvas a escribir pronto"
+            }
+        ]
+    }
+]

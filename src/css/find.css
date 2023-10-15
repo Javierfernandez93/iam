@@ -1,0 +1,77 @@
+.card {
+  box-shadow: none;
+  border: none;
+}
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
+}
+
+@keyframes placeHolderShimmer {
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animated-background {
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #F6F6F6;
+    background: linear-gradient(to right, #F6F6F6 8%, #F0F0F0 18%, #F6F6F6 33%);
+    background-size: 800px 104px;
+    position: relative;
+}
+.animated-background.img  {
+    height: 56px;
+}
+.animated-background.lead  {
+  height: 30px;
+}
+
+.lead-xl {
+    font-size: 2rem;
+}
+.lead-md {
+    font-size: 1.1rem;
+}
+.lead-sm {
+    font-size: 0.5rem;
+}
+.bold {
+    font-weight: 900 !important;
+}
+
+.single-text
+{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+}
+.special-items {
+    right: 0.5rem;
+    top: 0.9rem;
+}
+.fa-heart,
+.fa-heart:hover,
+.fa-heart:before,
+.fa-heart:hover:before
+{
+    transition: all ease 250ms;
+}
+.fa-heart:hover
+{
+    transform: scale(1.5);
+}
+.fa-heart:hover:before
+{
+    color: red;
+    font-weight: 600;
+    cursor: pointer;
+}

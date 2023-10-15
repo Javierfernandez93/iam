@@ -1,0 +1,10 @@
+.navbar-vertical .navbar-nav>.nav-item .nav-link .nav-link-text,
+.navbar-vertical .navbar-nav>.nav-item .nav-link i {
+   color: #222 !important;
+}
+.navbar-vertical .navbar-nav>.nav-item .nav-link.active i {
+    color: #fff !important;
+}
+.navbar-vertical .navbar-nav>.nav-item .nav-link.active .nav-link-text {
+    color: #222 !important;
+}

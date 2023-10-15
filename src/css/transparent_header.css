@@ -1,0 +1,7 @@
+.box-header { 
+  position: absolute;
+  z-index: 10001;
+  width: 101%;
+  background-color:#004c77 !important;
+  border-bottom: none !important;
+}

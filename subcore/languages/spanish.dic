@@ -1,0 +1,15 @@
+[_metadata]
+
+/**
+ * Holds the {@link Dictionary} spanish
+ * @package spiderFrame
+ * @author spiderMay <may.estilosfrescos@gmail.com>
+ * @copyright Copyright (c) 2010, spiderMay <may.estilosfrescos@gmail.com>
+ * @license http://opensource.org/licenses/gpl-license.php GNU Public License
+ * Provides a Config abstraction in the form of a singleton
+ */
+
+
+
+[__common]
+Hello=>Hello

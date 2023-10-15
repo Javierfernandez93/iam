@@ -1,0 +1,25 @@
+.banner {
+    /* background-color: #222; */
+}
+
+.banner-position-3 img {
+    height: 420px;
+    object-fit: contain;
+}
+.banner-position-1 img,
+.banner-position-2 img {
+    height: 146px;
+    object-fit: cover;
+}
+.banner img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .banner-position-1 img, 
+    .banner-position-2 img
+    {
+        object-fit: contain;
+        height: auto;
+    }
+}

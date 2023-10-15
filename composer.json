@@ -1,0 +1,16 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "iexbase/tron-api": "^5.0",
+        "php-curl-class/php-curl-class": "^9.14",
+        "capitalpayments/sdk": "dev-main",
+        "coinpaymentsnet/coinpayments-php": "^1.4",
+        "longman/telegram-bot": "^0.80.0",
+        "php-ai/php-ml": "^0.10.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    }
+}

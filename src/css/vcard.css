@@ -1,0 +1,17 @@
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+}
+
+ul li input[type=text] {
+    display: inline-block;
+}
+.form-floating-badge input {
+    padding-left: 15rem !important;
+}
+.form-floating-badge .badge {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1.5rem;
+}

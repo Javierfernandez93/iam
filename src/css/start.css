@@ -1,0 +1,9 @@
+.text-header,
+.big-text {
+    transition: all ease-out 160ms;
+}
+.big-text {
+    transform: scale(1.4);
+    font-weight: 900;
+    color: #222;
+}

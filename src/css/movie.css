@@ -1,0 +1,58 @@
+.horizontal-scrollable > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.card-movie {
+    height: 190px;
+    position: relative;
+    z-index: 1;
+
+}
+.card-movie-outside {
+    background-size: cover;
+    background-position: center;
+}
+.card-movie-outside:before,
+.card-movie-outside:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    left: 0;
+    top: 0;
+}
+.card-movie-outside:after {
+    background-color: rgba(0,0,0,0.3);
+}
+.card-movie-outside:after,
+.card-movie-outside:before {
+    content: '';
+}
+.card-movie-outside:before {
+    font-family: bootstrap-icons !important;
+    content: "\F2CA";
+    font-size: 5rem;
+    color: #fff;
+    z-index: 2;
+    display: flex;
+    background-color: rgba(51, 28, 57, 0.4);
+    justify-content: center;
+    align-items: center;
+    top: -25rem;
+}
+
+.card-movie-outside:before,
+.card-movie-outside:hover:before {
+    transition: all ease-in-out 300ms;
+}
+.card-movie-outside:hover:before {
+    top: 0rem;
+}
+.video {
+    width: 100%;
+}
+.bg-dark {
+    background-color: #161026 !important;
+}

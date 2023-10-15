@@ -1,0 +1,11 @@
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.opacity-50{
+    opacity: 0.5;
+}
+.avatar {
+    object-fit: cover;
+}

@@ -1,0 +1,51 @@
+:root {
+    --bs-bg-body: #eff3f7;
+    --bs-bg-primary: #395ac7;
+    --bs-bg-secondary: #283a5a;
+    --bs-bg-warning: #eb4f28;
+    --bs-bg-danger: #e7311d;
+    --bs-bg-success: #29e439;
+    --bs-bg-dark: #141e30;
+    --bs-bg-light: #eff3f7;
+}
+body {
+    background-color: var(--bs-bg-eff3f7) !important;   
+}
+.bg-primary {
+    background-color: var(--bs-bg-primary) !important;
+}
+.bg-secondary {
+    background-color: var(--bs-bg-secondary) !important;
+}
+.bg-warning {
+    background-color: var(--bs-bg-warning) !important;
+}
+.bg-danger {
+    background-color: var(--bs-bg-danger) !important;
+}
+.bg-success {
+    background-color: var(--bs-bg-success) !important;
+}
+.bg-dark {
+    background-color: var(--bs-bg-dark) !important;
+}
+.bg-light {
+    background-color: var(--bs-bg-light) !important;
+}
+/* cards */
+#card-social,
+#card-qr,
+#card-share {
+    border: none;
+    background-color: var(--bs-bg-light) !important;   
+}
+#card-share a {
+    color: var(--bs-bg-danger) !important;
+}
+.btn-social {
+    border-radius: 50%;
+    background-color: var(--bs-bg-light);
+}
+.text-socials {
+    color: var(--bs-bg-dark) !important;
+}

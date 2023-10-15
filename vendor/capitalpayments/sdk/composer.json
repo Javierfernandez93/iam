@@ -1,0 +1,21 @@
+{
+    "name": "capitalpayments/sdk",
+    "description": "For Api Payments",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "CapitalPayments\\Sdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Javier Fernández",
+            "email": "leqjl93@hotmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,22 @@
+:root {
+    --bg-purple: #00D99D !important;
+    --bg-success: #00D99D !important;
+    --bg-primary: #C7003B !important;
+}
+
+.bg-success {
+    background-color: var(--bg-success) !important;
+}
+.bg-primary {
+    background-color: var(--bg-primary) !important;
+}
+
+.btn-info,
+.btn-success {
+    background-color: var(--bg-success);
+    border-color: var(--bg-success);
+}
+.btn-primary {
+    background-color: var(--bg-primary);
+    border-color: var(--bg-primary);
+}

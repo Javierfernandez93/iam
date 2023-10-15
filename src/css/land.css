@@ -1,0 +1,65 @@
+.display-5,
+.display-3,
+.display-4,
+#name {
+  transition: all ease 500ms;
+}
+body {
+  overflow-x: hidden;
+}
+.bg-purple {
+  background-color: #090b56 !important;
+}
+.hero-1 {
+  padding-top: 230px;
+  position: relative;
+}
+.bg-overlay {
+  opacity: 0.2;
+}
+.hero-1-bg {
+  background-image: url(../../src/img/hero.png);
+  animation: slide_img 40s linear infinite;
+  animation-delay: 1s;
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat;
+  background-size: 50% 130%;
+}
+@media (max-width: 1199.98px) {
+    background-size: 70% 100%;
+}
+@media (max-width: 575.98px) {
+    background-size: 100% 100%;
+}
+
+@keyframes slide_img {
+    0% {
+        transform: translateX(0) translateZ(0);
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0);
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0);
+    }
+}
+.form-control,
+.input-group-text
+{
+  border: none !important;
+  border-bottom: 1px solid #eaeaea !important;
+  border-radius: 0 !important;
+}
+.input-group-text
+{
+    font-weight: 900 !important;
+}
+.form-control:focus {
+  font-weight: 600;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #fe5b74 !important;
+}

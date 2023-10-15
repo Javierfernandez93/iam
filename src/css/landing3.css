@@ -1,0 +1,49 @@
+body {
+    background-color: #000000;
+    overflow-x: hidden;
+}
+html {
+    overflow-x: hidden;
+}
+
+html,
+.bg-dark 
+{
+    background-color: #000000 !important;
+}
+.bg-white {
+    background-color: #ffffff;
+} 
+.section-3,
+.section-1 {
+    min-height: 40rem;
+}
+.section-2 {
+    background-image: url(../../src/img/landing2/landing-bg.png);
+    min-height: 40rem;
+    background-position: top;
+    background-size: cover;
+}
+.section-3 {
+    background-image: url(../../src/img/landing2/students.png);
+    min-height: 40rem;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 600px) {
+  .font-responsive {
+    color: #222 !important;
+    text-align: center;
+  }
+  .display-1 {
+    font-size: 3rem;
+  }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+.text-xxs {
+    font-size: 0.7rem;
+}

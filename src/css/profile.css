@@ -1,0 +1,27 @@
+.avatar-editable:hover:before {
+    opacity: 1;
+}
+.avatar-editable:before {
+    content: 'Cambiar imagen';
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 0;
+    background-color: rgba(1, 1, 1, 0.7);
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    display: inline-flex;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+}
+.avatar-editable:before,
+.avatar-editable:hover,
+.avatar-editable:hover:before {
+    transition: all ease-in-out 200ms;
+}
+.navbar.navbar-main 
+{
+    width:  97% !important;
+}
