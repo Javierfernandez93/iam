@@ -100,7 +100,8 @@ const AdmincuponViewer = {
                                     <td class="align-middle text-center text-sm">{{cupon.discount.numberFormat(2)}} %</td>
                                     <td class="align-middle text-center text-sm">{{cupon.create_date.formatFullDate()}}</td>
                                     <td class="align-middle text-center text-sm">
-                                        <span class="badge bg-primary">Disponible</span>
+                                        <span v-if="cupon.status == 1" class="badge bg-primary">Disponible</span>
+                                        <span v-else-if="cupon.status == 0" class="badge bg-secondary">En uso</span>
                                     </td>
                                 </tr>
                             </tbody>
