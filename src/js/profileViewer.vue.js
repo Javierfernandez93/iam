@@ -104,7 +104,7 @@ const ProfileViewer = {
         })
     },
     template : `
-        <div v-if="user">
+        <div v-if="user" class="mt-n5">
             <div class="container-fluid">
                 <div class="page-header min-height-300 border-radius-xl mt-4"
                     style="background-image: url('../../src/img/bg-marketing.jpg?t=1'); background-position-y: 50%;">
