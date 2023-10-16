@@ -63,9 +63,15 @@ const AdminbannerViewer = {
             <div v-for="banner in banners" class="col-12 col-xl">
                 <div class="card card-body mb-3">
                     <div class="mb-3">                                        
-                        <img v-if="banner.image" :src="banner.image" class="card-img-top"/>
+                        <img v-if="banner.image" :src="banner.image" class="img-thumbnail w-100" style="height:25rem;object-fit:cover"/>
 
-                        <input class="d-nones" ref="file" @change="uploadFile($event.target,banner)" capture="filesystem" type="file" accept=".jpg, .png, .jpeg" />
+                        <div class="p-3 fw-semibold position-relative my-3 text-center border rounded-2 cursor-pointer z-zoom-element">
+                            Subir imagen
+                            <div class="position-absolute z-index-1 w-100 h-100 top-0 start-0">
+                                <input class="d-nones w-100 h-100 opacity-0" ref="file" @change="uploadFile($event.target,banner)" capture="filesystem" type="file" accept=".jpg, .png, .jpeg" />
+                            </div>
+                        </div>
+
                     </div>
 
                     <textarea type="text" v-model="banner.title" class="form-control mb-3">{{banner.title}}</textarea>
