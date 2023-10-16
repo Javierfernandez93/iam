@@ -490,6 +490,9 @@ class UserSupport extends Http {
     getEmailLists(data, callback) {
         return this.call('../../app/application/getEmailLists.php', data, callback);
     }
+    getCupons(data, callback) {
+        return this.call('../../app/application/getCupons.php', data, callback);
+    }
     saveCatalogPaymentMethod(data, callback) {
         return this.call('../../app/application/saveCatalogPaymentMethod.php', data, callback);
     }

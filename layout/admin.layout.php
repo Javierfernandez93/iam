@@ -70,6 +70,15 @@
 
                 <?php if ($UserSupport->hasPermission('list_users')) { ?>
                     <li class="nav-item">
+                        <a class="nav-link <?php if (in_array($route, [JFStudio\Router::AdminCupons])) { ?>active<?php } ?>" href="../../apps/admin-cupon/">
+                            <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-view-stacked"></i></span>
+                            <span class="nav-link-text text-dark ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::AdminCupons); ?></span>
+                        </a>
+                    </li>
+                <?php } ?>
+
+                <?php if ($UserSupport->hasPermission('list_users')) { ?>
+                    <li class="nav-item">
                         <a class="nav-link <?php if (in_array($route, [JFStudio\Router::AdminPackages])) { ?>active<?php } ?>" href="../../apps/admin-products/packages">
                             <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-view-stacked"></i></span>
                             <span class="nav-link-text text-dark ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::AdminPackages); ?></span>

@@ -60,6 +60,7 @@ class Router {
     const AdminProducts = 108;
     const Deposit = 109;
     const AdminEmails = 110;
+    const AdminCupons = 111;
 
     static function getName(int $route = null)
     {
@@ -119,6 +120,7 @@ class Router {
             self::AdminProducts => 'Productos',
             self::Deposit => 'Depósito',
             self::AdminEmails => 'Lista de correos',
+            self::AdminCupons => 'Lista de cupones',
             default => 'Sin nombre'
         };
     }
