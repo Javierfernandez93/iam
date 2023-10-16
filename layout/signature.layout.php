@@ -32,11 +32,11 @@
     <script src="https://cdn.jsdelivr.net/npm/signature_pad@4.0.0/dist/signature_pad.umd.min.js"></script>
     
     <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/jquery-3.1.1.js" type="text/javascript"></script>
-    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/jquery-ui.js?v=2.6.5" type="text/javascript"></script>
-    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/alertCtrl.js?v=2.6.5" type="text/javascript"></script>
+    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/jquery-ui.js?v=2.6.6" type="text/javascript"></script>
+    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/alertCtrl.js?v=2.6.6" type="text/javascript"></script>
     <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/loader.js" type="text/javascript"></script>
-    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/boxloader.js?v=2.6.5" type="text/javascript"></script>
-    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/http.js?v=2.6.5" type="text/javascript"></script>
+    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/boxloader.js?v=2.6.6" type="text/javascript"></script>
+    <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/http.js?v=2.6.6" type="text/javascript"></script>
     <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/translator.js" type="text/javascript"></script>
     <script src="<?php echo HCStudio\Connection::getMainPath();?>/src/js/general.js?t=3" type="text/javascript"></script>
 

@@ -1,4 +1,4 @@
-import { User } from '../../src/js/user.module.js?v=2.6.5'   
+import { User } from '../../src/js/user.module.js?v=2.6.6'   
 
 const PackageviewViewer = {
     name : 'packageview-viewer',

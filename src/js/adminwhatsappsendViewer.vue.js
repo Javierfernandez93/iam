@@ -1,4 +1,4 @@
-import { UserSupport } from '../../src/js/userSupport.module.js?v=2.6.5'
+import { UserSupport } from '../../src/js/userSupport.module.js?v=2.6.6'
 
 const AdminwhatsappsendViewer = {
     name : 'adminwhatsappsend-viewer',

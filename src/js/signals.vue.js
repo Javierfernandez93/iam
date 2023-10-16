@@ -1,6 +1,6 @@
-import { SignalsViewer } from '../../src/js/signalsViewer.vue.js?v=2.6.5'
-import { SignalsaddViewer } from '../../src/js/signalsaddViewer.vue.js?v=2.6.5'
-import { TradingviewwidgetViewer } from '../../src/js/tradingviewwidgetViewer.vue.js?v=2.6.5'
+import { SignalsViewer } from '../../src/js/signalsViewer.vue.js?v=2.6.6'
+import { SignalsaddViewer } from '../../src/js/signalsaddViewer.vue.js?v=2.6.6'
+import { TradingviewwidgetViewer } from '../../src/js/tradingviewwidgetViewer.vue.js?v=2.6.6'
 
 Vue.createApp({
     components : { 
