@@ -8,8 +8,6 @@ if($UserLogin->logged === false) {
 	HCStudio\Util::redirectTo(TO_ROOT."/apps/login/");
 }
 
-
-
 $Layout = JFStudio\Layout::getInstance();
 
 $route = JFStudio\Router::Profile;

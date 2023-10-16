@@ -107,7 +107,7 @@ const ProfileViewer = {
         <div v-if="user">
             <div class="container-fluid">
                 <div class="page-header min-height-300 border-radius-xl mt-4"
-                    style="background-image: url('../../src/img/bg-marketing.jpg'); background-position-y: 50%;">
+                    style="background-image: url('../../src/img/bg-marketing.jpg?t=1'); background-position-y: 50%;">
                     <span class="mask bg-gradient-dark opacity-6"></span>
                 </div>
                 <div class="card blur shadow-blur card-body mx-4 mt-n6 overflow-hidden">
@@ -158,24 +158,18 @@ const ProfileViewer = {
             </div>
             <div class="container-fluid py-4">
                 <div class="row mb-3">
-                    <div class="col-12 col-xl-4 mb-3 mb-xl-0">
+                    <div class="col-12 col-xl-6 mb-3 mb-xl-0">
                         <div class="card mb-3">
                             <div class="card-header pb-0 p-3">
                                 <h6 class="mb-0">Configuración de plataforma</h6>
                             </div>
                             <div class="card-body p-3">
-                                <h6 class="text-uppercase text-body text-xs font-weight-bolder">Referidos</h6>
+                                <h6 class="text-uppercase text-body text-xs font-weight-bolder">Compras</h6>
                                 <ul class="list-group">
                                     <li class="list-group-item border-0 px-0">
                                         <div class="form-check form-switch ps-0">
                                             <input class="form-check-input ms-auto" type="checkbox" id="referral_email" v-model="user.referral_email">
-                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="referral_email">Recibir email cuando se unen a mi grupo</label>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item border-0 px-0">
-                                        <div class="form-check form-switch ps-0">
-                                            <input class="form-check-input ms-auto" type="checkbox" id="referral_notification" v-model="user.referral_notification">
-                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="referral_notification">Recibir notificaciones cuando se unen a mi grupo</label>
+                                            <label class="form-check-label text-body ms-3 text-truncate w-80 mb-0" for="referral_email">Recibir información de comrpas</label>
                                         </div>
                                     </li>
                                 </ul>
@@ -191,7 +185,7 @@ const ProfileViewer = {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-xl-4" id="profile">
+                    <div class="col-12 col-xl-6" id="profile">
                         <div class="card h-100">
                             <div class="card-header pb-0 p-3">
                                 <div class="row">
@@ -247,43 +241,13 @@ const ProfileViewer = {
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="list-group-item border-0 ps-0 text-sm position-relative">
-                                        <label>Landing personalizada</label>
-                                        <input type="text" v-model="user.landing" @keydown.space.prevent style="padding-left:10rem" type="text"  class="form-control d-inline" placeholder="Landing personalizada"/>
-
-                                        <span class="position-absolute start-0 bottom-0 px-3 mb-3">iam.com.mx/</span>
+                                    <li class="list-group-item border-0 ps-0 text-sm">
+                                        <label>Dirección</label>
+                                        <input type="text" v-model="user.address" class="form-control d-inline" placeholder="address"/>
                                     </li>
                                     <li class="list-group-item border-0 ps-0 text-sm">
                                         <label>Correo electrónico</label>
                                         <input type="text" v-model="user.email" :disabled="true" class="form-control d-inline" placeholder="Email"/>
-                                    </li>
-                                    
-                                    <li 
-                                        v-if="user.referral"
-                                        class="list-group-item border-0 ps-0 text-sm">
-                                        <label clas="mb-3">Patrocinador</label>
-                                        <div class="row align-items-center px-3 mt-3">
-                                            <div class="col-auto">
-                                                <div v-if="user.referral.image" class="avatar avatar-sm">
-                                                    <img :src="user.referral.image" alt="usuario"
-                                                        class="border-radius-lg shadow p-2 bg-primary">
-                                                </div>
-                                                <div v-else>
-                                                    <div v-if="user.referral.names" class="avatar avatar-sm bg-dark">
-                                                        {{ user.referral.names.getFirstLetter() }}
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <h6 class="mb-0 text-sm">
-                                                    {{user.referral.names}}
-                                                </h6>
-                                                <p class="mb-0 text-xs">{{user.referral.email}}</p>
-                                            </div>
-                                            <div class="col-auto">
-                                                <span class="badge bg-primary">ID {{user.referral.user_login_id}} </span>
-                                            </div>
-                                        </div>
                                     </li>
                                 </ul>
                             </div>
