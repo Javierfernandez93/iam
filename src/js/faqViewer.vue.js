@@ -110,10 +110,10 @@ const FaqViewer = {
                                 <div class="row">
                                     <div class="mb-3">Si aún tienes dudas no dudes en contactarnos en nuestros diferentes canales</div>
                                     <div class="col-12 col-xl">
-                                        <a class="btn shadow-none" href="https://zuum.link/gOUdV5"><i class="bi fs-1 bi-whatsapp text-success"></i></a>
+                                        <a class="btn shadow-none" href=""><i class="bi fs-1 bi-whatsapp text-success"></i></a>
                                     </div>
                                     <div class="col-12 col-xl">
-                                        <a class="btn shadow-none" href="https://t.me/zuumbusiness"><i class="bi fs-1 text-danger bi-telegram"></i></a>
+                                        <a class="btn shadow-none" href=""><i class="bi fs-1 text-danger bi-telegram"></i></a>
                                     </div>
                                     <div class="col-12 col-xl">
                                         <button class="btn shadow-none" @click="toggleMakeTicket(faq)"><i class="bi fs-1 text-success bi-chat-left-fill"></i></button>
