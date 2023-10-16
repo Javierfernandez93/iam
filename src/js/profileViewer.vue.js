@@ -190,7 +190,7 @@ const ProfileViewer = {
                             <div v-if="user" class="card-body p-3">
                                 <ul class="list-group">
                                     <li class="list-group-item border-0 ps-0 text-sm">
-                                        <label>ID de afiliado</label>
+                                        <label>Número de cliente</label>
                                         <input type="text" readonly v-model="user.company_id" disabled class="form-control d-inline" placeholder="Email"/>
                                     </li>
 
