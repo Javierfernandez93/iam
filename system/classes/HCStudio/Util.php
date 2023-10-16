@@ -746,4 +746,9 @@ class Util
 
 		return $bytes;
 	}
+
+	public static function isJson(string $string = null) : bool {
+		json_decode($string);
+		return json_last_error() === JSON_ERROR_NONE;
+	 }
 }

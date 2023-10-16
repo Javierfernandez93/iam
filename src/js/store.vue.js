@@ -1,5 +1,5 @@
 import { User } from '../../src/js/user.module.js?v=2.6.4'   
-import { WelcomeViewer } from '../../src/js/Welcomeviewer.vue.js?v=2.6.4'   
+import { WelcomeViewer } from '../../src/js/welcomeViewer.vue.js?v=2.6.4'   
 
 /* vue */
 import { StoreitemsViewer } from '../../src/js/storeitemsViewer.vue.js?v=2.6.4'

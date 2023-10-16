@@ -239,13 +239,22 @@ abstract class Orm
 		{
 			return false;
 		}
+
+		if(isset($array[$this->tblPrimary]))
+		{
+			$this->setId($array[$this->tblPrimary]);
+		}
 		
-		foreach ($array as $k => $v) $this->{$k} = $v;
+		foreach ($array as $k => $v) {
+			$this->{$k} = $v;
+		}
 	}
 
 	public function loadArray(array $array = null)
 	{
-		return $this->cargarArray($array);
+		$this->cargarArray($array);
+
+		return $this;
 	}
 
 	public function saveNew()

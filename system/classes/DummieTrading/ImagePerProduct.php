@@ -32,7 +32,7 @@ class ImagePerProduct extends Orm {
 		return false;
 	}
 
-	public function getImages($product_id = null)
+	public function getAll(int $product_id = null)
 	{
 		if(isset($product_id) === true)
 		{

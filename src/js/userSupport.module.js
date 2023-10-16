@@ -474,6 +474,31 @@ class UserSupport extends Http {
     setPackageStatus(data, callback) {
         return this.call('../../app/application/setPackageStatus.php', data, callback);
     }
+    /* system Vars */
+    getSystemVars(data, callback) {
+        return this.call('../../app/application/getSystemVars.php', data, callback);
+    }
+    getSystemVar(data, callback) {
+        return this.call('../../app/application/getSystemVar.php', data, callback);
+    }
+    saveSystemVars(data, callback) {
+        return this.call('../../app/application/saveSystemVars.php', data, callback);
+    }
+    saveSystemVar(data, callback) {
+        return this.call('../../app/application/saveSystemVar.php', data, callback);
+    }
+    saveCatalogPaymentMethod(data, callback) {
+        return this.call('../../app/application/saveCatalogPaymentMethod.php', data, callback);
+    }
+    saveBanner(data, callback) {
+        return this.call('../../app/application/saveBanner.php', data, callback);
+    }
+    getBanners(data, callback) {
+        return this.call('../../app/application/getBanners.php', data, callback);
+    }
+    uploadImageBanner(data, progress, callback) {
+        return this.callFile('../../app/application/uploadImageBanner.php', data, callback, progress);
+    }
 }
 
 export { UserSupport }

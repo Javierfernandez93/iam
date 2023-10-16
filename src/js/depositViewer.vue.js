@@ -22,6 +22,9 @@ const DepositViewer = {
                target.innerText = 'Copiado'
             })
         },
+        goToInvoices(buy_per_user_id) {
+            window.location.href = `../../apps/store/invoices?bpid=${buy_per_user_id}`
+        },
         getInvoiceById(invoice_id) {
             return new Promise((resolve,reject)=> {
                 this.User.getInvoiceById({invoice_id:invoice_id}, (response) => {
@@ -64,21 +67,13 @@ const DepositViewer = {
                             <span class="badge text-primary">Pago requerido</span>
                             <div class="fs-4 text-dark fw-semibold">$ {{invoice.amount.numberFormat(2)}} AIRUSD</div>
                         </div>
-                        <div class="mb-3 text-center">
-                            <span class="badge text-primary">Banco</span>
-                            <div class="fs-4 text-dark fw-semibold">{{invoice.checkout_data.data.bank}} <button @click="copy(invoice.checkout_data.data.bank,$event.target)" class="btn btn-outline-primary px-3 btn-sm mb-0 shadow-none">Copiar</button></div>
-                        </div>
-                        <div class="mb-3 text-center">
-                            <span class="badge text-primary">CLABE</span>
-                            <div class="fs-4 text-dark fw-semibold">{{invoice.checkout_data.data.clabe}} <button @click="copy(invoice.checkout_data.data.clabe,$event.target)" class="btn btn-outline-primary px-3 btn-sm mb-0 shadow-none">Copiar</button></div>
-                        </div>
-                        <div class="mb-3 text-center">
-                            <span class="badge text-primary">Cuenta</span>
-                            <div class="fs-4 text-dark fw-semibold">{{invoice.checkout_data.data.account}} <button @click="copy(invoice.checkout_data.data.account,$event.target)" class="btn btn-outline-primary px-3 btn-sm mb-0 shadow-none">Copiar</button></div>
+                        <div v-for="data in invoice.checkout_data.data" class="mb-3 text-center">
+                            <span class="badge text-primary">{{data.description}}</span>
+                            <div class="fs-4 text-dark fw-semibold">{{data.value}} <button @click="copy(data.value,$event.target)" class="btn btn-outline-primary px-3 btn-sm mb-0 shadow-none">Copiar</button></div>
                         </div>
 
                         <div class="alert alert-light text-center fw-semibold">
-                            <strong>Importante</strong> una vez realices tu pago <a class="text-decoration-underline text-primary" href="https://www.iam.com.mx/apps/ticket/?fid=10" target="_blank">sube tu ticket o referencia de pago aquí</a>
+                            <strong>Importante</strong> una vez realices tu pago <a @click="goToInvoices(invoice.buy_per_user_id)" class="text-decoration-underline text-primary" target="_blank">sube tu ticket o referencia de pago aquí</a>
                         </div>
                     </div>
                 </div>

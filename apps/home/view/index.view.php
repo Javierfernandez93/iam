@@ -22,7 +22,7 @@
           <span class="mt-3 border-top border-dark pt-3 w-10 d-flex animation-fall-left" style="--delay:2860ms"></span>
           <div class="mt-3 animation-fall-down" style="--delay:1400ms">
             <div class="d-flex justify-content-end">
-              <a href="../../apps/signup" class="btn lead btn-primary">Adquiere ahora</a>
+              <a href="../../apps/store/packageView?pid=1" class="btn lead btn-primary">Adquiere ahora</a>
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@
   
   <newsletter-viewer text="¿Quieres recibir más información?"></newsletter-viewer>
 
-  <section class="d-none">
+  <section class="vh-100">
     <div class="embed-responsive embed-responsive-21by9">
       <video src="../../src/files/video/video.mp4" class="w-100" playsinline autoplay muted loop>
         <p>Su navegador no soporta vídeos HTML5.</p>
@@ -99,9 +99,6 @@
     </div>
   </section>
 
-  <section class="vh-50" style="background-image:url(../../src/img/section-5-1.png);background-size:cover;background-position:center;background-attachment:scroll;background-repeat:no-repeat">
-    
-  </section>
 
   <section class="bg-light">
     <div class="container py-5">
@@ -175,5 +172,6 @@
 
   <loginwidget-viewer></loginwidget-viewer>
 
-  <div id="map"></div>
+  <home-viewer></home-viewer>
+  
 </div>

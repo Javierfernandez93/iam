@@ -122,7 +122,7 @@ function createTransactionDeposit(DummieTrading\BuyPerUser $BuyPerUser = null,Du
 	return [
 		'amount' => $BuyPerUser->amount,
 		'txn_id' => $BuyPerUser->invoice_id,
-		'data' => DummieTrading\CatalogPaymentMethod::BANK_DATA,
+		'data' => (new DummieTrading\CatalogPaymentMethod)->getAdditionalPaymentMethodData(DummieTrading\CatalogPaymentMethod::DEPOSIT),
 		'unix_time' => time(),
 		// 'checkout_url' => "http://localhost:8888/DummieTrading/apps/airtm/process".$UserLogin->getPidQuery()."&txn_id={$BuyPerUser->invoice_id}"
 		'checkout_url' => "../../apps/deposit/process".$UserLogin->getPidQuery()."&txn_id={$BuyPerUser->invoice_id}"

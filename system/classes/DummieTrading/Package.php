@@ -49,8 +49,12 @@ class Package extends Orm {
 	public static function getProducts(array $products = null) : array 
 	{
 		$Product = new Product; 
-		return array_map(function($product) use($Product) {
+		$ImagePerProduct = new ImagePerProduct;
+		
+		return array_map(function($product) use($Product,$ImagePerProduct) {
 			$product['product'] = $Product->getProduct($product['product_id']);
+			$product['images'] = $ImagePerProduct->getAll($product['product_id']);
+
 			return $product;
 		},$products);	
 	}
@@ -78,6 +82,7 @@ class Package extends Orm {
 			$sql = "SELECT 
 						{$this->tblName}.{$this->tblName}_id,
 						{$this->tblName}.title,
+						{$this->tblName}.description,
 						{$this->tblName}.product_ids,
 						{$this->tblName}.catalog_package_type_id,
 						{$this->tblName}.amount

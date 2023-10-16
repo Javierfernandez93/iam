@@ -62,7 +62,7 @@
                 <?php if ($UserSupport->hasPermission('list_users')) { ?>
                     <li class="nav-item">
                         <a class="nav-link <?php if (in_array($route, [JFStudio\Router::AdminPackages])) { ?>active<?php } ?>" href="../../apps/admin-products/packages">
-                            <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-person-circle"></i></span>
+                            <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-view-stacked"></i></span>
                             <span class="nav-link-text text-dark ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::AdminPackages); ?></span>
                         </a>
                     </li>
@@ -71,7 +71,7 @@
                 <?php if ($UserSupport->hasPermission('list_users')) { ?>
                     <li class="nav-item">
                         <a class="nav-link <?php if (in_array($route, [JFStudio\Router::AdminProducts])) { ?>active<?php } ?>" href="../../apps/admin-products/products">
-                            <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-person-circle"></i></span>
+                            <span class="badge me-2 d-flex justify-content-center align-items-center icon"><i class="bi bi-ui-checks-grid"></i></span>
                             <span class="nav-link-text text-dark ms-1"><?php echo JFStudio\Router::getName(JFStudio\Router::AdminProducts); ?></span>
                         </a>
                     </li>

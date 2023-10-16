@@ -404,6 +404,15 @@ class User extends Http {
     getProfileShort(data, callback) {
         return this.call('../../app/application/getProfileShort.php', data, callback, null, null);
     }
+    getSystemVar(data, callback) {
+        return this.call('../../app/application/getSystemVar.php', data, callback);
+    }
+    getBanners(data, callback) {
+        return this.call('../../app/application/getBanners.php', data, callback);
+    }
+    getPackageInfo(data, callback) {
+        return this.call('../../app/application/getPackageInfo.php', data, callback);
+    }
 }
 
 export { User }

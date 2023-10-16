@@ -8,13 +8,6 @@ if($UserLogin->logged === false) {
 	DummieTrading\UserLogin::redirectToLogin();
 }
 
-if(!$UserLogin->isStarted())
-{
-	HCStudio\Util::redirectTo("../../apps/backoffice/start");
-}
-
-// d(JFStudio\OrderIdentificator::identify("orden de mercado venta con 0.1231 de lotaje 26624 de tp y 26621 de stop loss"));
-
 $Layout = JFStudio\Layout::getInstance();
 
 $route = JFStudio\Router::Backoffice;

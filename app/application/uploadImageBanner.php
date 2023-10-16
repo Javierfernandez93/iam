@@ -4,9 +4,9 @@ require_once TO_ROOT . "system/core.php";
 
 $data = HCStudio\Util::getHeadersForWebService();
 
-$UserLogin = new DummieTrading\UserLogin;
+$UserSupport = new DummieTrading\UserSupport;
 
-if($UserLogin->logged === true)
+if($UserSupport->logged === true)
 {
     if(!empty($_FILES))
 	{

@@ -72,7 +72,9 @@ const StoreitemsViewer = {
             return Math.ceil(quantity)
         },
         addPackage(item) {
-            this.User.addPackage({package_id:item.package_id}, (response) => {
+            let quantity = item.quantity != undefined ? item.quantity : 1
+
+            this.User.addPackage({package_id:item.package_id,quantity:quantity}, (response) => {
                 if (response.s == 1) {
                     this.cart.package_id = response.package_id
                     
@@ -102,7 +104,10 @@ const StoreitemsViewer = {
         getPackages(catalog_package_type_id) {
             this.User.getPackages({catalog_package_type_id:catalog_package_type_id}, (response) => {
                 if (response.s == 1) {
-                    this.packages = response.packages
+                    this.packages = response.packages.map((_package)=>{
+                        _package.quantity = 1
+                        return _package
+                    })
                 }
             })
         },
@@ -112,6 +117,14 @@ const StoreitemsViewer = {
         
         if(['package'].includes(package_type)) {
             this.getPackages(this.PACKAGE_TYPE.MEMBERSHIP)
+        }
+
+        if(getParam("pid")) 
+        {
+            this.addPackage({
+                package_id:getParam("pid"),
+                quantity:getParam("quantity")
+            })
         }
     },
     template : `
@@ -129,11 +142,16 @@ const StoreitemsViewer = {
                     <div class="position-relative z-index-1">
                         <div class="card-body">
                             <div class="h2 text-white">{{package.title}}</div>
-                            <div class="lead text-light">{{package.description}}</div>
                             
-                            <div class="mt-5 text-center">
+                            <div class="my-5 text-center">
                                 <div class="text-md text-light mb-n0">Valor</div>
                                 <div class="h2 fw-sembold text-white">$ {{package.amount.numberFormat(2)}}</div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <button @click="package.quantity = parseInt(package.quantity-1)" class="btn btn-outline-secondary mb-0" type="button" id="button-addon1">-</button>
+                                <input v-model="package.quantity" type="number" class="form-control text-center rounded-0" placeholder="" aria-label="" aria-describedby="button-addon1">
+                                <button @click="package.quantity = parseInt(package.quantity+1)" class="btn btn-outline-secondary mb-0" type="button" id="button-addon1">+</button>
                             </div>
                         </div>
                         <div class="card-footer d-grid">

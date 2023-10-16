@@ -10,12 +10,14 @@ if($UserLogin->logged === true)
 {	
 	$Package = new DummieTrading\Package;
 	
+	$data['quantity'] = isset($data['quantity']) ? $data['quantity'] : 1;
+	
 	if($Package->loadWhere("package_id = ? AND status = ?",[$data['package_id'],JFStudio\Constants::AVIABLE]))
 	{
 		$Cart = Jcart\Cart::getInstance(Jcart\Cart::LAST_INSTANCE);
 		$Cart->loadFromSession();	
 
-		if($Cart->addItem($Package,1))
+		if($Cart->addItem($Package,$data['quantity']))
 		{
 			if($Cart->save())
 			{

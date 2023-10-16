@@ -1,14 +1,16 @@
-.Space-Grotesk {
-  font-family: "Space Grotesk";
-}
-
 :root {
   --bg-primary: #99195f;
   --bg-dark: #000;
   --text-dark: #000;
   --bg-warning: #f2cd03;
-  --bg-primary-back: #c52791;
-  --bg-primary-light: #ffaeb6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+
+}
+.Space-Grotesk {
+  font-family: "Space Grotesk";
 }
 
 .text-primary {

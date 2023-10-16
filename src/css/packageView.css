@@ -1,0 +1,7 @@
+:root {
+    --bg-primary-back: #eeeeee;
+    --bg-primary-light: #222;
+  }
+.main-container:before {
+    height: 30rem;
+}

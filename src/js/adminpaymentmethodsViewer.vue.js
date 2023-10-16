@@ -5,6 +5,7 @@ const AdminpaymentmethodsViewer = {
     data() {
         return {
             UserSupport: new UserSupport,
+            catalogPaymentMethod: null,
             catalogPaymentMethods: {},
             catalogPaymentMethodsAux: {},
             query: null,
@@ -51,7 +52,7 @@ const AdminpaymentmethodsViewer = {
         }
     },
     methods: {
-        sortData: function (column) {
+        sortData(column) {
             this.catalogPaymentMethods.sort((a, b) => {
                 const _a = column.desc ? a : b
                 const _b = column.desc ? b : a
@@ -65,17 +66,17 @@ const AdminpaymentmethodsViewer = {
 
             column.desc = !column.desc
         },
-        filterData: function () {
+        filterData() {
             this.catalogPaymentMethods = this.catalogPaymentMethodsAux
 
             this.catalogPaymentMethods = this.catalogPaymentMethods.filter((catalogPaymentMethod) => {
                 return catalogPaymentMethod.code.toLowerCase().includes(this.query.toLowerCase()) || catalogPaymentMethod.currency.toLowerCase().includes(this.query.toLowerCase()) || catalogPaymentMethod.fee.toString().includes(this.query.toLowerCase()) || catalogPaymentMethod.description.includes(this.query.toLowerCase())
             })
         },
-        toggleEditingFee: function (catalogPaymentMethod) {
+        toggleEditingFee(catalogPaymentMethod) {
             catalogPaymentMethod.editingFee = !catalogPaymentMethod.editingFee
         },
-        savePaymentMethodFee: function (catalogPaymentMethod) {
+        savePaymentMethodFee(catalogPaymentMethod) {
             this.UserSupport.savePaymentMethodFee({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id, fee : catalogPaymentMethod.fee},(response)=>{
                 if(response.s == 1)
                 {
@@ -83,7 +84,7 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        inactivePaymentMethod: function (catalogPaymentMethod) {
+        inactivePaymentMethod(catalogPaymentMethod) {
             this.UserSupport.inactivePaymentMethod({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id},(response)=>{
                 if(response.s == 1)
                 {
@@ -91,7 +92,7 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        activePaymentMethod: function (catalogPaymentMethod) {
+        activePaymentMethod(catalogPaymentMethod) {
             this.UserSupport.activePaymentMethod({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id},(response)=>{
                 if(response.s == 1)
                 {
@@ -99,7 +100,7 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        enableRecomendation: function (catalogPaymentMethod) {
+        enableRecomendation(catalogPaymentMethod) {
             this.UserSupport.enableRecomendation({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id},(response)=>{
                 if(response.s == 1)
                 {
@@ -107,7 +108,7 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        disableRecomendation: function (catalogPaymentMethod) {
+        disableRecomendation(catalogPaymentMethod) {
             this.UserSupport.disableRecomendation({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id},(response)=>{
                 if(response.s == 1)
                 {
@@ -115,7 +116,7 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        deletePaymentMethod: function (catalogPaymentMethod) {
+        deletePaymentMethod(catalogPaymentMethod) {
             this.UserSupport.deletePaymentMethod({catalog_payment_method_id: catalogPaymentMethod.catalog_payment_method_id},(response)=>{
                 if(response.s == 1)
                 {
@@ -123,11 +124,27 @@ const AdminpaymentmethodsViewer = {
                 }
             })
         },
-        getAllPaymentMethods: function () {
+        editAdditionalInfo(catalogPaymentMethod) {
+            this.showModal()
+            
+            this.catalogPaymentMethod = catalogPaymentMethod
+        },
+        showModal() {
+            $(this.$refs.modal).modal('show')
+        },
+        getAllPaymentMethods() {
             this.UserSupport.getAllPaymentMethods({}, (response) => {
                 if (response.s == 1) {
                     this.catalogPaymentMethodsAux = response.catalogPaymentMethods
                     this.catalogPaymentMethods = this.catalogPaymentMethodsAux
+                }
+            })
+        },
+        saveCatalogPaymentMethod() {
+            this.UserSupport.saveCatalogPaymentMethod({catalogPaymentMethod:this.catalogPaymentMethod}, (response) => {
+                if (response.s == 1) {
+                    $(this.$refs.modal).modal('hide')
+
                 }
             })
         },
@@ -289,23 +306,10 @@ const AdminpaymentmethodsViewer = {
                                         </td>
                                         <td>
                                             <div v-if="catalogPaymentMethod.additional_data">
-                                                <div>
-                                                    <div class="text-xs text-secondary">Banco</div>
-                                                    <div class="text-semibold text-dark">{{catalogPaymentMethod.additional_data.bank}}</div>
+                                                <div v-for="data in catalogPaymentMethod.additional_data">
+                                                    <div class="text-xs text-secondary">{{data.description}}</div>
+                                                    <div class="text-semibold text-dark">{{data.value}}</div>
                                                 </div>
-                                                <div>
-                                                    <div class="text-xs text-secondary">Cuenta</div>
-                                                    <div class="text-semibold text-dark">{{catalogPaymentMethod.additional_data.account}}</div>
-                                                </div>
-                                                <div>
-                                                    <div class="text-xs text-secondary">CLABE</div>
-                                                    <div class="text-semibold text-dark">{{catalogPaymentMethod.additional_data.clabe}}</div>
-                                                </div>
-                                                <div>
-                                                    <div class="text-xs text-secondary">Beneficiario</div>
-                                                    <div class="text-semibold text-dark">{{catalogPaymentMethod.additional_data.beneficiary}}</div>
-                                                </div>
-                                            </div>
                                         </td>
                                         <td class="align-middle text-center text-sm">
                                             <div class="btn-group">
@@ -320,6 +324,11 @@ const AdminpaymentmethodsViewer = {
                                                     <li v-else>
                                                         <button class="dropdown-item" @click="activePaymentMethod(catalogPaymentMethod)">Activar</button>
                                                     </li>
+
+                                                    <li v-if="catalogPaymentMethod.additional_data">
+                                                        <button class="dropdown-item" @click="editAdditionalInfo(catalogPaymentMethod)">Editar info adicional</button>
+                                                    </li>
+                                                    
                                                     <li v-if="catalogPaymentMethod.recomend">
                                                         <button class="dropdown-item" @click="disableRecomendation(catalogPaymentMethod)">Quitar de recomendados</button>
                                                     </li>
@@ -336,6 +345,29 @@ const AdminpaymentmethodsViewer = {
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ref="modal" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div v-if="catalogPaymentMethod">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Editar info {{catalogPaymentMethod.payment_method}}</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div  class="modal-body">
+                            <div v-for="info in catalogPaymentMethod.additional_data" class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">{{info.description}}</span>
+                                <input v-model="info.value" type="text" class="form-control px-3" :placeholder="info.field"/>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn mb-0 shadow-none btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            <button @click="saveCatalogPaymentMethod" type="button" class="btn mb-0 shadow-none btn-primary">Guardar</button>
                         </div>
                     </div>
                 </div>

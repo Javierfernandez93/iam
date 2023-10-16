@@ -67,7 +67,6 @@ const StorecheckoutViewer = {
                                 <div class="row align-items-center">
                                     <div class="col">
                                         <div class="fs-5 fw-semibold  text-dark">{{item.item.tblFields.title}}</div>
-                                        {{item.item.tblFields.description}}
                                     </div>
                                     <div class="col-auto fw-semibold text-primary">
                                         $ {{item.item.tblFields.amount.numberFormat(2)}} USD / unidad

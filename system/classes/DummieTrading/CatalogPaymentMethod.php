@@ -3,7 +3,7 @@
 namespace DummieTrading;
 
 use HCStudio\Orm;
-
+use HCStudio\Util;
 use JFStudio\Constants;
 
 class CatalogPaymentMethod extends Orm {
@@ -54,6 +54,21 @@ class CatalogPaymentMethod extends Orm {
 	
 	public function getAllForAdmin(string $filter = null)
 	{
+		if($payment_methods = $this->_getAllForAdmin($filter))
+		{
+			return array_map(function($payment_method){
+				if(Util::isJson($payment_method['additional_data']))
+				{
+					$payment_method['additional_data'] = json_decode($payment_method['additional_data'],true);
+				}
+
+				return $payment_method;
+			},$payment_methods);
+		}
+	}
+	
+	public function _getAllForAdmin(string $filter = null)
+	{
 		$sql = "SELECT 
 					{$this->tblName}.{$this->tblName}_id,
 					{$this->tblName}.image,
@@ -76,6 +91,24 @@ class CatalogPaymentMethod extends Orm {
 		return $this->connection()->rows($sql);
 	}
 
+	public function getAdditionalPaymentMethodData(int $catalog_payment_method_id = null)
+	{
+		if(!isset($catalog_payment_method_id))
+		{
+			return false;
+		}
+
+		if($additional_data = $this->getAdditionalData($catalog_payment_method_id))
+		{
+			if(Util::isJson($additional_data))
+			{
+				$additional_data = json_decode($additional_data,true);
+			}
+
+			return $additional_data;
+		}
+	}
+
 	public function get(int $catalog_payment_method_id = null)
 	{
 		if(isset($catalog_payment_method_id) == true)
@@ -83,6 +116,7 @@ class CatalogPaymentMethod extends Orm {
 			$sql = "SELECT 
 						{$this->tblName}.{$this->tblName}_id,
 						{$this->tblName}.payment_method,
+						{$this->tblName}.additional_data,
 						{$this->tblName}.image
 					FROM 
 						{$this->tblName}
@@ -93,6 +127,26 @@ class CatalogPaymentMethod extends Orm {
 					";
 			
 			return $this->connection()->row($sql);
+		}
+
+		return false;
+	}
+
+	public function getAdditionalData(int $catalog_payment_method_id = null)
+	{
+		if(isset($catalog_payment_method_id) == true)
+		{
+			$sql = "SELECT 
+						{$this->tblName}.additional_data
+					FROM 
+						{$this->tblName}
+					WHERE 
+						{$this->tblName}.catalog_payment_method_id = '{$catalog_payment_method_id}'
+					AND 
+						{$this->tblName}.status != '".Constants::DELETE."'
+					";
+			
+			return $this->connection()->field($sql);
 		}
 
 		return false;

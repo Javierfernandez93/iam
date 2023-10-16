@@ -63,14 +63,19 @@
                 <div class="col-12 col-xl-4 mb-3 mb-xl-0">
                 <img src="../../src/img/logo.png" id="logo" class="" style="width: 12rem;">
                     <div class="text-white h3 text-light">Descubre la Belleza en lo Natural</div>
+
+                    <?php echo DummieTrading\SystemVar::_getValue('company_address'); ?>
+                    <?php if($email = DummieTrading\SystemVar::_getValue('company_email')) { ?>
+                        <?php echo $email?>
+                    <?php } ?>
                 </div>
                 <div class="col-12 col-xl-4 mb-3 mb-xl-0">
                     <div class="fs-4 fw-bold text-uppercase">Redes sociales</div>
 
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item border-0 bg-transparent px-0"><a href="" class="text-white" target="_blank"><i class="bi bi-facebook me-1"></i> Facebook</a></li>
-                        <li class="list-group-item border-0 bg-transparent px-0"><a href="" class="text-white" target="_blank"><i class="bi bi-instagram me-1"></i> Instagram</a></li>
-                        <li class="list-group-item border-0 bg-transparent px-0"><a href="" class="text-white" target="_blank"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
+                        <li class="list-group-item border-0 bg-transparent px-0"><a href="<?php echo DummieTrading\SystemVar::_getValue('social_facebook'); ?>" class="text-white" target="_blank"><i class="bi bi-facebook me-1"></i> Facebook</a></li>
+                        <li class="list-group-item border-0 bg-transparent px-0"><a href="<?php echo DummieTrading\SystemVar::_getValue('social_instagra'); ?>" class="text-white" target="_blank"><i class="bi bi-instagram me-1"></i> Instagram</a></li>
+                        <li class="list-group-item border-0 bg-transparent px-0"><a href="<?php echo DummieTrading\SystemVar::_getValue('social_whatsapp'); ?>" class="text-white" target="_blank"><i class="bi bi-whatsapp me-1"></i> Whatsapp</a></li>
                     </ul>
                 </div>
                 <div class="col-12 col-xl-4">
