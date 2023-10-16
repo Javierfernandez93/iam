@@ -1,4 +1,4 @@
-import { UserSupport } from '../../src/js/userSupport.module.js?t=1.1.4'   
+import { UserSupport } from '../../src/js/userSupport.module.js?t=1.1.5'   
 
 const HomeViewer = {
     name : 'home-viewer',

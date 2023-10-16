@@ -1,4 +1,4 @@
-import { User } from '../../src/js/user.module.js?t=1.1.4'   
+import { User } from '../../src/js/user.module.js?t=1.1.5'   
 
 const BrokersViewer = {
     name : 'brokers-viewer',
