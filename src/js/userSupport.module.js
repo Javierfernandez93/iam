@@ -487,6 +487,9 @@ class UserSupport extends Http {
     saveSystemVar(data, callback) {
         return this.call('../../app/application/saveSystemVar.php', data, callback);
     }
+    getEmailLists(data, callback) {
+        return this.call('../../app/application/getEmailLists.php', data, callback);
+    }
     saveCatalogPaymentMethod(data, callback) {
         return this.call('../../app/application/saveCatalogPaymentMethod.php', data, callback);
     }

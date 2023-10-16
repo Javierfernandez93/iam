@@ -15,7 +15,7 @@ if($UserSupport->hasPermission('list_email') === false) {
 
 $Layout = JFStudio\Layout::getInstance();
 
-$route = JFStudio\Router::AdminEmail;
+$route = JFStudio\Router::AdminEmails;
 $Layout->init(JFStudio\Router::getName($route),"index","admin","",TO_ROOT."/");
 
 $Layout->setScriptPath(TO_ROOT . '/src/');
