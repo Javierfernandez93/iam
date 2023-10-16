@@ -1,4 +1,4 @@
-import { User } from '../../src/js/user.module.js?v=2.6.5'   
+import { User } from '../../src/js/user.module.js?v=2.6.6'   
 
 const WelcomeViewer = {
     name : 'welcome-viewer',
@@ -44,8 +44,11 @@ const WelcomeViewer = {
                     <div class="d-grid mb-1">
                         <a href="../../apps/store/package" class="btn btn-outline-light mb-0">Comprar</a>
                     </div>
-                    <div class="d-grid">
+                    <div class="d-grid mb-1">
                         <a href="../../apps/store/invoices" class="btn btn-light shadow-none mb-0">Ver mis compras</a>
+                    </div>
+                    <div class="d-grid">
+                        <a href="../../apps/backoffice/profile" class="btn btn-outline-light mb-0">Perfil</a>
                     </div>
                 </div>
             </div>
