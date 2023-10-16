@@ -113,6 +113,7 @@ function updateUserAddress($data = null,$company_id = null)
     {
         $UserAddress->user_login_id = $company_id;
     }
+
     
     $UserAddress->country_id = isset($data['country_id']) ? $data['country_id'] : '';
     $UserAddress->address = isset($data['address']) ? $data['address'] : '';

@@ -14,6 +14,7 @@ if($UserLogin->logged === true)
         'phone' => $UserLogin->_data['user_contact']['phone'],
         'names' => $UserLogin->_data['user_data']['names'],
         'catalog_timezone_id' => $UserLogin->_data['user_account']['catalog_timezone_id'],
+        'address' => $UserLogin->_data['user_address']['address'],
         'landing' => $UserLogin->_data['user_account']['landing'],
         'active' => $UserLogin->isActive(),
         'has_card' => $UserLogin->hasCard(),
