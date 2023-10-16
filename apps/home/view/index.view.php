@@ -154,6 +154,8 @@
       <li class="bg-circles-gradient-6"></li>
       <li class="bg-circles-gradient-7"></li>
       <li class="bg-circles-gradient-8"></li>
+      <li class="bg-circles-gradient-9"></li>
+      <li class="bg-circles-gradient-10"></li>
     </ul>
     <div class="container">
       <div class="mask bg-primary position-absolute"></div>

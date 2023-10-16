@@ -132,6 +132,14 @@ background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgb
   background: rgb(229,67,255);
 background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgba(230,144,255,0) 54%, rgba(255,255,244,0) 100%);
 }
+.bg-circles-gradient-9 {
+  background: rgb(229,67,255);
+background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgba(230,144,255,0) 54%, rgba(255,255,244,0) 100%);
+}
+.bg-circles-gradient-10 {
+  background: rgb(229,67,255);
+background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgba(230,144,255,0) 54%, rgba(255,255,244,0) 100%);
+}
 .circles li {
   position: absolute;
   display: block;
@@ -149,13 +157,6 @@ background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgb
   animation-delay: 0s;
   animation-duration: 20s;
   border-radius: 50%;
-  background: rgb(213, 249, 178);
-  background: radial-gradient(
-    circle,
-    rgba(213, 249, 178, 1) 0%,
-    rgba(218, 255, 217, 0) 61%,
-    rgba(255, 255, 244, 0) 100%
-  );
 }
 
 .circles li:nth-child(2) {
