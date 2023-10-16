@@ -71,7 +71,7 @@ const AdmindashViewer = {
                             </div>
                         </div>
                         <div class="col-auto">
-                            <button :disabled="!systemVar.busy" @click="saveSystemVar(systemVar)" class="btn btn-primary" v-text="systemVar.busy ? '...' : 'Actualizar'">
+                            <button :disabled="!systemVar.busy" @click="saveSystemVar(systemVar)" class="btn mb-0 btn-primary" v-text="systemVar.busy ? '...' : 'Actualizar'">
                             </button>
                         </div>
                         <div v-if="systemVar.busy" class="col-auto">
