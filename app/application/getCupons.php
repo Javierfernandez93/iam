@@ -8,7 +8,7 @@ $UserSupport = new DummieTrading\UserSupport;
 
 if($UserSupport->logged === true)
 {
-    if($cupons = (new DummieTrading\Cupon)->findAll("status = ?",[1]))
+    if($cupons = (new DummieTrading\Cupon)->findAll("status != ?",[-1]))
     {
         $data["cupons"] = $cupons;
         $data["s"] = 1;
