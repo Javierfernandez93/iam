@@ -9,6 +9,46 @@ const AdmincuponViewer = {
         }
     },
     methods: {
+        createCupons() {
+            let alert = alertCtrl.create({
+                title: "Crea cupones",
+                subTitle: `Ingresa la información que se te pide`,
+                inputs: [
+                    {
+                        type: 'text',
+                        id: 'code',
+                        placeholder: 'Cupon',
+                        name: 'code',
+                    },
+                    {
+                        type: 'number',
+                        id: 'amount',
+                        placeholder: 'Cantidad',
+                        name: 'amount',
+                    }
+                ],
+                buttons: [
+                    {
+                        text: "Sí, crear",
+                        class: 'btn-success',
+                        role: "cancel",
+                        handler: (data) => {
+                            this.UserSupport.createCupons(data,(response)=>{
+                                this.getCupons()
+                            })
+                        },
+                    },
+                    {
+                        text: "Cancelar",
+                        role: "cancel",
+                        handler: (data) => {
+                        },
+                    },
+                ],
+            })
+
+            alertCtrl.present(alert.modal);
+        },
         getCupons() {
             this.UserSupport.getCupons({}, (response) => {
                 if (response.s == 1) {
@@ -23,6 +63,16 @@ const AdmincuponViewer = {
     template : `
         <div v-if="cupons">
             <div class="card">
+                <div class="card-header">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-12 col-xl h3">
+                            Lista de cupones
+                        </div>
+                        <div class="col-12 col-xl-auto">
+                            <button @click="createCupons" class="btn btn-primary mb-0">Generar cupones</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body px-0 pt-0 pb-2">
                     <div class="table-responsive p-0">
                         <table class="table align-items-center mb-0">

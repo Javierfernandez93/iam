@@ -493,6 +493,9 @@ class UserSupport extends Http {
     getCupons(data, callback) {
         return this.call('../../app/application/getCupons.php', data, callback);
     }
+    createCupons(data, callback) {
+        return this.call('../../app/application/createCupons.php', data, callback);
+    }
     saveCatalogPaymentMethod(data, callback) {
         return this.call('../../app/application/saveCatalogPaymentMethod.php', data, callback);
     }

@@ -13,11 +13,19 @@ class Cupon extends Orm {
     parent::__construct();
   }
   
-  public static function generate() 
+  public static function createCupons(array $data = null) 
+  {
+    for($i = 0; $i < $data['amount']; $i++)
+    {
+      self::generate($data['code']);
+    }
+  }
+
+  public static function generate(string $code = null) 
   {
     $Cupon = new self;
     
-    $Cupon->code = Token::__randomKey(self::TOKEN_LENGHT);
+    $Cupon->code = isset($code) ? $code : Token::__randomKey(self::TOKEN_LENGHT);
     $Cupon->create_date = time();
     
     return $Cupon->save();
