@@ -70,6 +70,10 @@ const AdmindashViewer = {
                                 <input v-model="systemVar.val" @keypress.exact.enter="saveSystemVar(systemVar)" :class="systemVar.val ? 'is-valid' : 'is-invalid'" type="text" class="form-control px-3" :placeholder="systemVar.description" :aria-label="systemVar.description" aria-describedby="basic-addon1">
                             </div>
                         </div>
+                        <div class="col-auto">
+                            <button :disabled="!systemVar.busy" @click="saveSystemVar(systemVar)" class="btn btn-primary" v-text="systemVar.busy ? '...' : 'Actualizar'">
+                            </button>
+                        </div>
                         <div v-if="systemVar.busy" class="col-auto">
                             <div class="spinner-border spinner-border-sm" role="status">
                                 <span class="visually-hidden">Loading...</span>
