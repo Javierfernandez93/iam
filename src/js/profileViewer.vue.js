@@ -139,20 +139,6 @@ const ProfileViewer = {
                                 </p>
                             </div>
                         </div>
-                        <div class="col-auto my-auto text-end">
-                            <div class="text-muted fw-semibold small">Estatus</div>
-                            <div class="fs-5">
-                                <span 
-                                    v-if="user.active"
-                                    class="badge bg-success">
-                                    Activo 
-                                </span>
-                                <span v-else
-                                    class="badge bg-secondary">
-                                    Usuario inactivo
-                                </span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
