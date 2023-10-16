@@ -8,3 +8,13 @@
 .navbar-vertical .navbar-nav>.nav-item .nav-link.active .nav-link-text {
     color: #222 !important;
 }
+
+
+.line-middle {
+    display: block;
+    height: 1px;
+    width: 100%;
+  }
+  .opacity-2 {
+    opacity: 0.4;
+  }

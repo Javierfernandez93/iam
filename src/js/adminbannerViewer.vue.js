@@ -50,12 +50,13 @@ const AdminbannerViewer = {
         this.getBanners()
     },
     template : `
-        <div class="row justify-content-center">  
-            <div class="col-12">  
-                <div class="alert alert-light text-center">  
-                    <strong>Banners</strong>
-                    <div>Añade las imagenes, titulos y subtitulos de los banners del backoffice de tus clientes</div>
-                </div>
+        <div class="row px-3 py-3">
+            <div class="col bg-secondary opacity-2 line-middle mt-2">
+            </div>
+            <div class="col-auto text-uppercase text-secondary">
+                Banners publicitarios
+            </div>
+            <div class="col bg-secondary opacity-2 line-middle mt-2">
             </div>
         </div>
         <div v-if="banners" class="row justify-content-center align-items-center">

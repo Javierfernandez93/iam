@@ -52,12 +52,13 @@ const AdmindashViewer = {
         this.getSystemVars()
     },
     template : `
-        <div class="row justify-content-center">  
-            <div class="col-12">  
-                <div class="alert alert-light text-center">  
-                    <strong>Información de tu sitio</strong>
-                    <div>Añade la información de tu sitio</div>
-                </div>
+        <div class="row px-3 py-3">
+            <div class="col bg-secondary opacity-2 line-middle mt-2">
+            </div>
+            <div class="col-auto text-uppercase text-secondary">
+                Información del sitio
+            </div>
+            <div class="col bg-secondary opacity-2 line-middle mt-2">
             </div>
         </div>
         <div v-if="systemVars" class="card card-body">
