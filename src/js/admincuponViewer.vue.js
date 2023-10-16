@@ -25,6 +25,12 @@ const AdmincuponViewer = {
                         id: 'amount',
                         placeholder: 'Cantidad',
                         name: 'amount',
+                    },
+                    {
+                        type: 'number',
+                        id: 'discount',
+                        placeholder: 'Porcentaje de descuento',
+                        name: 'discount',
                     }
                 ],
                 buttons: [

@@ -17,15 +17,16 @@ class Cupon extends Orm {
   {
     for($i = 0; $i < $data['amount']; $i++)
     {
-      self::generate($data['code']);
+      self::generate($data);
     }
   }
 
-  public static function generate(string $code = null) 
+  public static function generate(array $data = null) 
   {
     $Cupon = new self;
     
-    $Cupon->code = isset($code) ? $code : Token::__randomKey(self::TOKEN_LENGHT);
+    $Cupon->code = isset($data['code']) ? $data['code'] : Token::__randomKey(self::TOKEN_LENGHT);
+    $Cupon->discount = isset($data['discount']) ? $data['discount'] : 0;
     $Cupon->create_date = time();
     
     return $Cupon->save();
