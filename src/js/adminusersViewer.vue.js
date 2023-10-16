@@ -368,7 +368,7 @@ const AdminusersViewer = {
                         <div><span class="badge bg-secondary text-xxs">Total {{users.length}}</span></div>
                         <div class="fs-5">Usuarios</div>
                     </div>
-                    <div class="col-auto text-end">
+                    <div class="col-auto text-end d-none">
                         <div><a href="../../apps/admin-users/add" type="button" class="btn shadow-none mb-0 btn-success px-3 btn-sm">Añadir usuario</a></a></div>
                     </div>
                 </div>
