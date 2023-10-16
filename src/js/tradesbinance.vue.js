@@ -1,5 +1,5 @@
-import { TradesbinanceViewer } from '../../src/js/tradesbinanceViewer.vue.js?v=2.6.4'
-import { OrdermakerViewer } from '../../src/js/ordermakerViewer.vue.js?v=2.6.4'
+import { TradesbinanceViewer } from '../../src/js/tradesbinanceViewer.vue.js?v=2.6.5'
+import { OrdermakerViewer } from '../../src/js/ordermakerViewer.vue.js?v=2.6.5'
 
 Vue.createApp({
     components : { 

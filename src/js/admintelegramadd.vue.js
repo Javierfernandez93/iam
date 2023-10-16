@@ -1,5 +1,5 @@
 /* vue */
-import { AdmintelegramaddViewer } from '../../src/js/admintelegramaddViewer.vue.js?v=2.6.4'
+import { AdmintelegramaddViewer } from '../../src/js/admintelegramaddViewer.vue.js?v=2.6.5'
 
 Vue.createApp({
     components: {

@@ -1,7 +1,7 @@
-import { StartViewer } from '../../src/js/startViewer.vue.js?v=2.6.4'
-import { MetatraderViewer } from '../../src/js/metatraderViewer.vue.js?v=2.6.4'
-import { ConnectViewer } from '../../src/js/connectViewer.vue.js?v=2.6.4'
-import { SignalViewer } from '../../src/js/signalViewer.vue.js?v=2.6.4'
+import { StartViewer } from '../../src/js/startViewer.vue.js?v=2.6.5'
+import { MetatraderViewer } from '../../src/js/metatraderViewer.vue.js?v=2.6.5'
+import { ConnectViewer } from '../../src/js/connectViewer.vue.js?v=2.6.5'
+import { SignalViewer } from '../../src/js/signalViewer.vue.js?v=2.6.5'
 
 Vue.createApp({
     components : { 

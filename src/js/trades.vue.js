@@ -1,7 +1,7 @@
-import { TradesViewer } from '../../src/js/tradesViewer.vue.js?v=2.6.4'
-import { OrdermakerViewer } from '../../src/js/ordermakerViewer.vue.js?v=2.6.4'
-import { VarsViewer } from '../../src/js/varsViewer.vue.js?v=2.6.4'
-import { TradingviewwidgetViewer } from '../../src/js/tradingviewwidgetViewer.vue.js?v=2.6.4'
+import { TradesViewer } from '../../src/js/tradesViewer.vue.js?v=2.6.5'
+import { OrdermakerViewer } from '../../src/js/ordermakerViewer.vue.js?v=2.6.5'
+import { VarsViewer } from '../../src/js/varsViewer.vue.js?v=2.6.5'
+import { TradingviewwidgetViewer } from '../../src/js/tradingviewwidgetViewer.vue.js?v=2.6.5'
 
 Vue.createApp({
     components : { 
