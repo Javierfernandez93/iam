@@ -48,7 +48,7 @@
 
     <div class="py-6 position-relative">
       <div class="card-vertical-bg position-absolute bottom-0 start-0"></div>
-      <div class="container">
+      <div class="container justify-content-center px-0">
         <div class="row g-5 w-100 align-items-center justify-content-center py-5">
           <div class="col-12">
             <div class="row g-5 justify-content-center align-items-top">
@@ -157,7 +157,7 @@
       <li class="bg-circles-gradient-9"></li>
       <li class="bg-circles-gradient-10"></li>
     </ul>
-    <div class="container">
+    <div class="container justify-content-center px-0">
       <div class="mask bg-primary position-absolute"></div>
       <div class="row w-100 vh-100 align-items-center justify-content-center">
         <div class="col-11 col-md col-xl-8 text-center position-absolute z-index-1">
