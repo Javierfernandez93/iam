@@ -48,7 +48,7 @@
 
     <div class="py-6 position-relative d-flex justify-content-center">
       <div class="card-vertical-bg position-absolute bottom-0 start-0"></div>
-      <div class="container">
+      <div class="container d-flex justify-content-center">
         <div class="row g-5 w-100 align-items-center justify-content-center py-5">
           <div class="col-12">
             <div class="row g-5 justify-content-center align-items-top">
