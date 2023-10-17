@@ -220,8 +220,8 @@ background: radial-gradient(circle, rgba(229,67,255,0.33237044817927175) 0%, rgb
 
 @media (max-width: 760px) {
   .display-1 {
-    font-size: 4rem !important;
-    line-height: 4rem;
+    font-size: 3rem !important;
+    line-height: 3rem;
   }
 }
 

@@ -14,7 +14,7 @@
     </ul>
     <div class="container position-relative z-index-2">
       <div class="row w-100 vh-100 align-items-center justify-content-center">
-        <div class="col-6 col-xl-6 text-start pe-0 pe-xl-5">
+        <div class="col-12 col-xl-6 text-start pe-0 pe-xl-5">
           <div class="display-1 Space-Grotesk text-dark fw-bold animation-fall-left" style="--delay:3260ms">Siente tu</div>
           <div class="display-1 Space-Grotesk text-dark fw-bold animation-fall-left" style="--delay:2860ms">Belleza</div>
             
@@ -26,7 +26,7 @@
             </div>
           </div>
         </div>
-        <div class="col-6 d-none d-sm-block col-xl-6 animation-fall-left" style="--delay:2500ms">
+        <div class="col-12 d-none d-sm-block col-xl-6 animation-fall-left" style="--delay:2500ms">
           <img src="../../src/img/img-1.png" alt="aceite" title="aceite" class="shadow shadow-xl w-100" />
         </div>
       </div>
