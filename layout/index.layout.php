@@ -43,7 +43,7 @@
     <div class="position-absolute py-5 z-index-3 top-0 w-100 animation-fall-down" style="--delay:1500ms" id="navbar">
         <div class="container">
             <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-                <a href="../../apps/home" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <a href="../../apps/home" class="d-flex align-items-center col-6 mb-2 mb-md-0 text-dark text-decoration-none">
                     <img src="../../src/img/logo.png" id="logo" class="" alt="logo" title="logo" style="width: 12rem;">
                 </a>
 
