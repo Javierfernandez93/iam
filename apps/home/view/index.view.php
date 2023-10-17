@@ -4,7 +4,7 @@
 <div id="app" class="">
   <div class="progress-scroll z-index-5 position-fixed"></div>
 
-  <section class="bg-gradient-primary position-relative overflow-hidden">
+  <section class="bg-gradient-primary position-relative overflow-hidden" id="section-1">
     <ul class='circles position-absolute bottom-0 start-0 z-index-1'>
       <li class="bg-circles-gradient-1"></li>
       <li class="bg-circles-gradient-2"></li>
