@@ -4,7 +4,7 @@
 <div id="app" class="">
   <div class="progress-scroll z-index-5 position-fixed"></div>
 
-  <section class="bg-gradient-primary position-relative overflow-hidden" id="section-1">
+  <section class="bg-gradient-primary position-relative overflow-hidden">
     <ul class='circles position-absolute bottom-0 start-0 z-index-1'>
       <li class="bg-circles-gradient-1"></li>
       <li class="bg-circles-gradient-2"></li>
@@ -14,7 +14,7 @@
     </ul>
     <div class="container position-relative z-index-2">
       <div class="row w-100 vh-100 align-items-center justify-content-center">
-        <div class="col-12 col-xl-6 text-start pe-0 pe-xl-5 pt-5 pt-xl-0">
+        <div class="col-12 col-xl-6 text-start pe-0 pe-xl-5">
           <div class="display-1 Space-Grotesk text-dark fw-bold animation-fall-left" style="--delay:3260ms">Siente tu</div>
           <div class="display-1 Space-Grotesk text-dark fw-bold animation-fall-left" style="--delay:2860ms">Belleza</div>
             
@@ -46,9 +46,9 @@
       </div>
     </div>
 
-    <div class="py-6 position-relative">
+    <div class="py-6 position-relative d-flex justify-content-center">
       <div class="card-vertical-bg position-absolute bottom-0 start-0"></div>
-      <div class="container justify-content-center px-0">
+      <div class="container">
         <div class="row g-5 w-100 align-items-center justify-content-center py-5">
           <div class="col-12">
             <div class="row g-5 justify-content-center align-items-top">
@@ -157,7 +157,7 @@
       <li class="bg-circles-gradient-9"></li>
       <li class="bg-circles-gradient-10"></li>
     </ul>
-    <div class="container justify-content-center px-0">
+    <div class="container">
       <div class="mask bg-primary position-absolute"></div>
       <div class="row w-100 vh-100 align-items-center justify-content-center">
         <div class="col-11 col-md col-xl-8 text-center position-absolute z-index-1">
