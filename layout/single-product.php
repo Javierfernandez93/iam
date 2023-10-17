@@ -22,7 +22,7 @@
     <meta property="og:image" itemprop="image" content="../../src/img/logo.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1693339145" />
-    <meta name="theme-color" content="#2D2250">
+    <meta name="theme-color" content="#99195f">
 
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />

@@ -21,7 +21,7 @@
     <meta property="og:image" itemprop="image" content="https://www.iam.com.mx/src/img/logo.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1693339145" />
-    <meta name="theme-color" content="#2D2250">   
+    <meta name="theme-color" content="#99195f">   
 
     <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
 

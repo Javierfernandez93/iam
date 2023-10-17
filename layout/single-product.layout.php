@@ -22,7 +22,7 @@
     <meta property="og:image" itemprop="image" content="../../src/img/logo.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1693339145" />
-    <meta name="theme-color" content="#2D2250">  
+    <meta name="theme-color" content="#99195f">  
     
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />

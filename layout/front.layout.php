@@ -21,7 +21,7 @@
         <meta property="og:image" itemprop="image" content="http://www.iam.com.mx/src/img/metadata.png">
         <meta property="og:type" content="website" />
         <meta property="og:updated_time" content="1693339145" />
-        <meta name="theme-color" content="#2D2250">    
+        <meta name="theme-color" content="#99195f">    
 
 
         <!-- plugin css -->

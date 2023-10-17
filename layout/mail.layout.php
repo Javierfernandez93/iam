@@ -7,7 +7,7 @@
     <meta content="Iam" name="description" />
     <meta name="author" content="Iam all rights reserved 2022">
     <meta name="HandheldFriendly" content="True" />
-    <meta name="theme-color" content="#2D2250">   
+    <meta name="theme-color" content="#99195f">   
     
     {{css_scripts}}
 </head>

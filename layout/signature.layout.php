@@ -7,7 +7,7 @@
     <meta content="I am beauty Oil" name="description" />
     <meta name="author" content="<?php echo HCStudio\Connection::proyect_name;?> all rights reserved 2022">
     <meta name="HandheldFriendly" content="True" />
-    <meta name="theme-color" content="#2D2250">   
+    <meta name="theme-color" content="#99195f">   
     
     <!-- App favicon -->
     <link rel="icon" type="image/png" href="../../src/img/favicon.png">

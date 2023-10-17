@@ -19,10 +19,10 @@
     <meta property="og:site_name" content="I am beauty Oil">
     <meta property="og:title" content="I am beauty Oil" />
     <meta property="og:description" content="Tu Aliado para el Cuidado Personal" />
-    <meta property="og:image" itemprop="image" content="../../src/img/logo.png">
+    <meta property="og:image" itemprop="image" content="<?php echo HCStudio\Connection::getMainPath();?>/src/img/logo.png">
     <meta property="og:type" content="website" />
     <meta property="og:updated_time" content="1693339145" />
-    <meta name="theme-color" content="#2D2250">  
+    <meta name="theme-color" content="#99195f">  
     
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
